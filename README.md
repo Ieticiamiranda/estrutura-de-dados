@@ -67,6 +67,6 @@
 
 ---
 
-*Para dúvidas ou sugestões, entre em contato: leticiamiranda.s014@gmail.com.*
+*Para dúvidas ou sugestões, entre em contato: leticiamiranda.tech@gmail.com.*
 
 ***Obrigado por visitar este repositório! ⋆˙⟡***
