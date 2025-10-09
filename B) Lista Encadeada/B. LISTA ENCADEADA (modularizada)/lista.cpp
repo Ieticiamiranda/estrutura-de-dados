@@ -1,34 +1,44 @@
 #include <iostream>
-#include "lista.h"
+#include "lista.h" // inclui as funções para manipulação de listas
 using namespace std;
 
-Node *criarListaVazia() { return nullptr; }
+// questão 1 - lista encadeada
 
-void inserirElemento(Node *&head, int valor)
+// cria e retorna uma lista vazia (nullptr)
+Node *criarListaVazia()
 {
-    Node *novo = new Node;
-    novo->info = valor;
-    novo->next = head;
-    head = novo;
+    return nullptr;
 }
 
+// insere um elemento no início da lista
+void inserirElemento(Node *&head, int valor)
+{
+    Node *novo = new Node; // cria um novo nó
+    novo->info = valor;    // armazena o valor
+    novo->next = head;     // aponta para o início atual da lista
+    head = novo;           // atualiza o início da lista
+}
+
+// percorre a lista e imprime todos os elementos
 void percorrerLista(Node *head)
 {
-    if (!head)
+    if (!head) // lista vazia
     {
         cout << "Lista vazia!" << endl;
         return;
     }
-    Node *atual = head;
+
+    Node *atual = head; // começa do primeiro elemento
     cout << "Elementos da lista: ";
     while (atual != nullptr)
     {
-        cout << atual->info << " ";
-        atual = atual->next;
+        cout << atual->info << " "; // imprime o valor
+        atual = atual->next;        // vai para o próximo nó
     }
     cout << endl;
 }
 
+// retorna o número de elementos da lista
 int tamanhoLista(Node *head)
 {
     int count = 0;
@@ -41,6 +51,7 @@ int tamanhoLista(Node *head)
     return count;
 }
 
+// retorna o elemento da posição indicada (0 é o primeiro)
 int obterElemento(Node *head, int pos)
 {
     int i = 0;
@@ -48,7 +59,7 @@ int obterElemento(Node *head, int pos)
     while (atual != nullptr)
     {
         if (i == pos)
-            return atual->info;
+            return atual->info; // achou o elemento
         atual = atual->next;
         i++;
     }

@@ -1,9 +1,10 @@
 #include <iostream>
-#include "menus.h"
+#include "menus.h" // inclui funções que mostram os menus e retornam opções
 using namespace std;
 
+//
 int MenuQuestoes()
-{
+{ // menu de toda a parte B) LISTA ENCADEADA
     int opc;
     cout << "=============================================================" << endl;
     cout << "                 ESCOLHA UMA QUESTAO                         " << endl;
@@ -19,7 +20,7 @@ int MenuQuestoes()
 }
 
 int MenuLista()
-{
+{ // submenu da questao 1
     int escolha;
     cout << "=============================================================" << endl;
     cout << "                 MENU LISTA                                  " << endl;
@@ -37,7 +38,7 @@ int MenuLista()
 }
 
 int MenuPilha()
-{
+{ // submenu da questao 2
     int escolha;
     cout << "=============================================================" << endl;
     cout << "                 MENU PILHA                                  " << endl;
@@ -54,7 +55,7 @@ int MenuPilha()
 }
 
 int MenuFila()
-{
+{ // submenu da questao 3
     int escolha;
     cout << "=============================================================" << endl;
     cout << "                 MENU FILA                                   " << endl;

@@ -249,7 +249,7 @@ int MenuQuestoes()
     return opc;
 }
 
-//submenu da lista
+// submenu da lista
 int MenuLista()
 {
     int escolha;
@@ -268,7 +268,7 @@ int MenuLista()
     return escolha;
 }
 
-//submenu da pilha
+// submenu da pilha
 int MenuPilha()
 {
     int escolha;
@@ -286,7 +286,7 @@ int MenuPilha()
     return escolha;
 }
 
-//submenu da fila
+// submenu da fila
 int MenuFila()
 {
     int escolha;
@@ -316,7 +316,7 @@ int main()
         switch (opcao)
         {
         case 1: // QUESTAO 1 -> LISTA
-        { 
+        {
             Node *lista = nullptr;
             int escolha, valor, pos;
             do
@@ -358,7 +358,7 @@ int main()
             break;
         }
         case 2: // QUESTAO 2 -> PILHA
-        { 
+        {
             Pilha p;
             inicializar(p);
             int escolha, valor;

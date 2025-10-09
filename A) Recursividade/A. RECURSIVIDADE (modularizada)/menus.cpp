@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
-#include "menus.h"
+#include "menus.h" // inclui funções que mostram os menus e retornam opções
 
-int MenuQuestoes() {
+int MenuQuestoes()
+{ // menu de toda a parte A) RECURSIVIDADE;
     int opc;
     cout << "=============================================================" << endl;
     cout << "                 ESCOLHA UMA QUESTAO                         " << endl;
@@ -18,7 +19,8 @@ int MenuQuestoes() {
     return opc;
 }
 
-int MenuEntradas1() {
+int MenuEntradas1()
+{ // menu da questão 1 (f1, f2, f3)
     int opc;
     cout << "=============================================================" << endl;
     cout << "                  ESCOLHA UMA FUNCAO                         " << endl;
@@ -33,7 +35,8 @@ int MenuEntradas1() {
     return opc;
 }
 
-int MenuSubEntradas1() {
+int MenuSubEntradas1()
+{ // submenu de entradas fixas - questão 1  (f(0), f(1), f(5))
     int opc;
     cout << "=============================================================" << endl;
     cout << "                     ESCOLHA UMA ENTRADA                     " << endl;
@@ -48,7 +51,8 @@ int MenuSubEntradas1() {
     return opc;
 }
 
-int MenuLista() {
+int MenuLista()
+{ // submenu da questão 4 (lista encadeada)
     int opc;
     cout << "=============================================================" << endl;
     cout << "               ESCOLHA UM ITEM NO MENU ABAIXO                " << endl;

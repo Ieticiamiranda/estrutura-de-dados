@@ -1,8 +1,9 @@
 #include <iostream>
-#include "menus.h"
+#include "menus.h" // inclui funções que mostram os menus e retornam opções
 using namespace std;
 
-int MenuQuestoes() {
+int MenuQuestoes()
+{ // menu de toda a parte C) LISTA DUPLAMENTE ENCADEADA
     int opc;
     cout << "=============================================================" << endl;
     cout << "                 ESCOLHA UMA QUESTAO                         " << endl;
@@ -17,7 +18,8 @@ int MenuQuestoes() {
     return opc;
 }
 
-void MenuListaCase1() {
+void MenuListaCase1()
+{ // submenu da questao 1
     cout << "=============================================================" << endl;
     cout << "             MENU - LISTA DUPLAMENTE ENCADEADA               " << endl;
     cout << "=============================================================" << endl;
@@ -30,9 +32,10 @@ void MenuListaCase1() {
     cout << "OPCAO: ";
 }
 
-void MenuListaCase2() {
+void MenuListaCase2()
+{ // submenu da questao 2
     cout << "=============================================================" << endl;
-    cout << "             MENU - LISTA SEM DUPLICACAO                     " << endl;
+    cout << "      MENU - LISTA DUPLAMENTE ENCADEADA SEM DUPLICACAO       " << endl;
     cout << "=============================================================" << endl;
     cout << " [1] Inserir elemento no inicio" << endl;
     cout << " [2] Imprimir lista" << endl;
@@ -41,7 +44,8 @@ void MenuListaCase2() {
     cout << "OPCAO: ";
 }
 
-void MenuListaCase3() {
+void MenuListaCase3()
+{ // submenu da questao 3
     cout << "=============================================================" << endl;
     cout << "       MENU - LISTA CIRCULAR DUPLAMENTE ENCADEADA            " << endl;
     cout << "=============================================================" << endl;
